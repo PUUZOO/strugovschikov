@@ -1,0 +1,44 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "Portfolio Strugovschikov",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PUUZOO/strugovschikov.git"
+  },
+  "author": "Stanislav Strugovschikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PUUZOO/strugovschikov/issues"
+  },
+  "homepage": "https://github.com/PUUZOO/strugovschikov#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "bootstrap": "^4.4.1",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jquery": "^3.5.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "mysql": "^2.18.1",
+    "node-sass": "^4.14.0",
+    "popper.js": "^1.16.1",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
