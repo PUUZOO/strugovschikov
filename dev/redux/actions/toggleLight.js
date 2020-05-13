@@ -1,6 +1,6 @@
-import {TOGGLE_LIGHT} from '../actionTypes'; 
+import {TOGGLE_COLOR_THEME} from '../actionTypes'; 
 
-export const toggleLight = (status) => ({
-    type: TOGGLE_LIGHT,
-    status
+export const toggleLight = () => ({
+    type: TOGGLE_COLOR_THEME,
+    text: 'Theme coloe variant(day or night)'
 })
