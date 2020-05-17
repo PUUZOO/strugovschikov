@@ -9,7 +9,7 @@ const SwitchTheme = ({statusColorTheme, toggleLight}) => {
             type="switch"
             id="custom-switch"
             label="Check this switch"
-            checked={statusColorTheme ? '' : 'checked'}
+            checked={statusColorTheme == 'light'? '' : 'checked'}
             onChange={(e) => {
                 toggleLight()
             }}

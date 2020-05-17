@@ -1,22 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import { Container } from 'react-bootstrap'
 
 // Add CSS
-import './index.scss';
+import './common.blocks/index.scss';
 
 // Store
 import store from "./redux/store";
 
 // Components
-import SwitchTheme from './components/menu/SwitchTheme.jsx'
+import Wrapper from './components/Wrapper.jsx'
+import Header from './components/Header.jsx'
+import Main from './components/Main.jsx'
 
 ReactDOM.render(
   <Provider store={store}>
-    <Container className="py-5">
-      <SwitchTheme />
-    </Container>
+    <Wrapper>
+      <Header></Header>
+      <Main></Main>
+    </Wrapper>
   </Provider>,
   document.getElementById('portfolio')
 )
