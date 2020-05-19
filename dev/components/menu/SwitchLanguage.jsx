@@ -1,28 +1,28 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Form } from 'react-bootstrap';
-import { toogleTheme } from '../../redux/actions/toggleTheme'
+import { toggleLanguages } from '../../redux/actions/toggleLanguages'
 
-const SwitchTheme = ({statusColorTheme, toogleTheme}) => {
+const SwitchLanguage = ({statusColorTheme, toggleLanguages}) => {
     return (
         <Form.Check 
             type="switch"
             id="custom-switch"
             label="Check this switch"
-            checked={statusColorTheme == 'light'? '' : 'checked'}
+            checked={statusLanguage == 'light'? '' : 'checked'}
             onChange={() => {
-                toogleTheme(statusColorTheme == 'light' ? 'dark' : 'light')
+                toogleTheme(statusLanguage == 'light' ? 'dark' : 'light')
             }}
         />
     );
 }
 
 const mapStateToProps = (state) => ({
-    statusColorTheme: state.toggleTheme.statusColorTheme
+    statusLanguages: state.toggleLanguages.statusLanguage
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    toogleTheme: (statusColorTheme) => dispatch(toogleTheme(statusColorTheme)),
+    toggleLanguages: (statusLanguages) => dispatch(toggleLanguages(statusLanguages)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(SwitchTheme);

@@ -1,15 +1,13 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 
 const Wrapper = ({children, statusColorTheme}) => {
     let invertColorTheme = statusColorTheme == 'dark' ? 'light' : 'dark';
-    return  <div className={`bg-${statusColorTheme} text-${invertColorTheme}`}>
+    return (<div className={`wrapper bg-${statusColorTheme} text-${invertColorTheme}`}> 
                 {children}
-            </div>
+            </div>)
 }
 
-const mapStateToProps = (state) => ({
-    statusColorTheme: state.statusColorTheme
-})
+const mapStateToProps = (state) => ({statusColorTheme: state.toggleTheme.statusColorTheme})
 
 export default connect(mapStateToProps)(Wrapper);

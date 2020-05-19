@@ -5,7 +5,10 @@ import { Container } from 'react-bootstrap'
 const Header = ({children}) => {
     return <header className="py-5 ">
         <Container>
-            <SwitchTheme />
+            <div className="d-block justify-content-between">
+                <SwitchLanguage/>
+                <SwitchTheme/>
+            </div>
         </Container>
     </header>
 } 
